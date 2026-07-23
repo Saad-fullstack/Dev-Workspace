@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif
+}
+
+/* Navbar */
+
+.logo-text {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.start-btn {
+    box-shadow: 0 0 10px 3px rgb(165, 165, 202);
+    transition: transform 0.3s ease;
+}
+
+.start-btn:hover {
+    transform: scale(1.05);
+}
+
+.nav-item a {
+    border-bottom: 1.5px solid transparent;
+    padding: 2px !important;
+    transition: 0.3s ease;
+}
+
+.nav-item a:hover {
+    border-color: black;
+    color: #0000ff;
+}
+
+/* Hero-section */
+.hero-image img {
+    width: 550px;
+    height: 300px;
+}
+
+.hero-section {
+    background-color: #F2F8FF;
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.hero-section .hero-text h1 {
+    font-size: 60px;
+}
+
+/* Features */
+.feature-section {
+    margin-bottom: 80px;
+}
+
+.card-container .icon {
+    width: 48px;
+    height: 60px;
+    color: rgb(11, 95, 252);
+}
+
+.card-container .card {
+    background-color: white;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: none;
+    transition: transform 0.3s ease;
+}
+
+.card-container .card:hover {
+    transform: scale(1.03);
+}
+
+/* About-section */
+.about {
+    background-color: aliceblue;
+    margin-bottom: 80px;
+}
+.about p {
+    text-align: justify;
+}
+
+.about ul li {
+    list-style: none;
+    margin-left: -26px !important;
+}
+
+.about-image img {
+    width: 400px;
+    height: auto;
+}
