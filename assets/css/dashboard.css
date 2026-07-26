@@ -172,6 +172,37 @@ body {
     height: 24px;
 }
 
+/* Dashboard Cards */
+
+.task-item {
+    padding-bottom: .75rem;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.note-item {
+    padding: 12px;
+    background: #f8f9fa;
+    border-radius: 12px;
+}
+
+.note-item h6 {
+    margin-bottom: 6px;
+}
+
+.progress {
+    height: 10px;
+    border-radius: 20px;
+}
+
+.progress-bar {
+    border-radius: 20px;
+}
+
 /* ================================= Responsive ================================== */
 
 /* **************** Tablet ***************** */

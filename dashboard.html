@@ -248,6 +248,136 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Dashboard Cards -->
+                <div class="row g-4 mt-1">
+
+                    <!-- Today's Tasks -->
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="mb-0">Today's Tasks</h4>
+                                    <a href="#" class="text-decoration-none">View All</a>
+                                </div>
+
+                                <div class="task-item d-flex align-items-center mb-3">
+                                    <input class="form-check-input me-3" type="checkbox">
+                                    <span>Finish Dashboard UI</span>
+                                </div>
+
+                                <div class="task-item d-flex align-items-center mb-3">
+                                    <input class="form-check-input me-3" type="checkbox">
+                                    <span>Complete Local Storage</span>
+                                </div>
+
+                                <div class="task-item d-flex align-items-center mb-3">
+                                    <input class="form-check-input me-3" type="checkbox">
+                                    <span>Push Latest Changes</span>
+                                </div>
+
+                                <div class="task-item d-flex align-items-center">
+                                    <input class="form-check-input me-3" type="checkbox">
+                                    <span>Prepare Presentation</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Recent Notes -->
+                    <div class="col-lg-6">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="mb-0">Recent Notes</h4>
+                                    <a href="#" class="text-decoration-none">View All</a>
+                                </div>
+
+                                <div class="note-item mb-3">
+                                    <h6>Frontend Ideas</h6>
+                                    <p class="mb-0 text-muted">
+                                        Dashboard improvements and UI updates.
+                                    </p>
+                                </div>
+
+                                <div class="note-item mb-3">
+                                    <h6>Hackathon Plan</h6>
+                                    <p class="mb-0 text-muted">
+                                        Finish UI first then implement JavaScript.
+                                    </p>
+                                </div>
+
+                                <div class="note-item">
+                                    <h6>JavaScript</h6>
+                                    <p class="mb-0 text-muted">
+                                        Revise Local Storage before coding.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Roadmap -->
+                    <div class="col-lg-8">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body">
+                                <h4 class="mb-4">Learning Roadmap</h4>
+                                <h5 class="fw-semibold mb-3" id="roadmap-name">
+                                    Frontend Developer
+                                </h5>
+                                <div class="d-flex justify-content-between align-items-center mb-2">
+                                    <small>Overall Progress</small>
+                                    <span id="roadmap-percentage">65%</span>
+                                </div>
+
+                                <div class="progress mb-4" style="height:10px;">
+                                    <div class="progress-bar bg-primary" id="roadmap-progress" style="width:65%;"></div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <small class="text-secondary">Current Milestone</small>
+                                        <p class="fw-semibold mb-3" id="current-milestone">
+                                            JavaScript DOM
+                                        </p>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <small class="text-secondary">Next Milestone</small>
+                                        <p class="fw-semibold mb-3" id="next-milestone">
+                                            ES6 Modules
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="col-lg-4">
+                        <div class="card border-0 shadow-sm rounded-4 h-100">
+                            <div class="card-body">
+                                <h4 class="mb-4">Quick Actions</h4>
+                                <div class="d-grid gap-3">
+                                    <button class="btn btn-primary">
+                                        <i data-lucide="plus"></i>
+                                        Add Task
+                                    </button>
+
+                                    <button class="btn btn-outline-primary">
+                                        <i data-lucide="notebook-pen"></i>
+                                        Add Note
+                                    </button>
+
+                                    <button class="btn btn-outline-success">
+                                        <i data-lucide="play"></i>
+                                        Start Focus
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- ================= Tasks ================= -->
