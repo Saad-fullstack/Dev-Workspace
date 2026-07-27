@@ -735,7 +735,7 @@
             </section>
 
             <!-- ================= Roadmap ================= -->
-            <section id="roadmap-section" class="content-section">
+            <section id="roadmap-section" class="content-section d-none">
                 <div class="container-fluid py-4">
 
                     <!-- Top -->
@@ -874,7 +874,131 @@
 
             <!-- ================= Analytics ================= -->
             <section id="analytics-section" class="content-section">
+                <div class="container-fluid py-4">
 
+                    <!-- Top -->
+                    <div class="mb-4">
+                        <h2 class="fw-bold mb-1">Analytics</h2>
+                        <p class="text-secondary mb-0">
+                            Monitor your productivity and overall progress.
+                        </p>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card border-0 shadow-sm rounded-4">
+                                <div class="card-body text-center">
+                                    <i data-lucide="clipboard-list" class="text-primary mb-3"></i>
+                                    <h3 id="analytics-total-task">12</h3>
+                                    <p class="text-secondary mb-0">
+                                        Total Tasks
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card border-0 shadow-sm rounded-4">
+                                <div class="card-body text-center">
+                                    <i data-lucide="badge-check" class="text-success mb-3"></i>
+                                    <h3 id="analytics-completed-task">8</h3>
+                                    <p class="text-secondary mb-0">
+                                        Completed Tasks
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card border-0 shadow-sm rounded-4">
+                                <div class="card-body text-center">
+                                    <i data-lucide="notebook-pen" class="text-warning mb-3"></i>
+                                    <h3 id="analytics-notes">5</h3>
+                                    <p class="text-secondary mb-0">
+                                        Notes Created
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xl-3">
+                            <div class="card border-0 shadow-sm rounded-4">
+                                <div class="card-body text-center">
+                                    <i data-lucide="timer" class="text-danger mb-3"></i>
+                                    <h3 id="analytics-focus-time">2h 30m</h3>
+                                    <p class="text-secondary mb-0">
+                                        Focus Time
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Progress -->
+                    <div class="card border-0 shadow-sm rounded-4 mb-4">
+                        <div class="card-body">
+                            <h5 class="fw-semibold mb-4">
+                                Productivity Overview
+                            </h5>
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Task Completion</span>
+                                    <span id="task-progress">70%</span>
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width:70%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Roadmap Progress</span>
+                                    <span id="roadmap-progress-value">65%</span>
+                                </div>
+
+                                <div class="progress">
+                                    <div class="progress-bar" style="width:65%;">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <div class="d-flex justify-content-between mb-2">
+                                    <span>Daily Focus Goal</span>
+                                    <span id="focus-progress">50%</span>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" style="width:50%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Summary -->
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body">
+                            <h5 class="fw-semibold mb-3">
+                                Summary
+                            </h5>
+                            <p class="text-secondary mb-2">
+                                ✔ You completed <strong>8</strong> tasks.
+                            </p>
+                            <p class="text-secondary mb-2">
+                                ✔ You created <strong>5</strong> notes.
+                            </p>
+                            <p class="text-secondary mb-2">
+                                ✔ You studied for <strong>2h 30m</strong>.
+                            </p>
+                            <p class="text-secondary mb-0">
+                                🎯 Keep going! You're making consistent progress.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- ================= Settings ================= -->
