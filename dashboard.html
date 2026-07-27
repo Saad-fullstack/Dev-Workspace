@@ -29,49 +29,51 @@
 
             <ul class="nav flex-column px-3 gap-2">
                 <li class="nav-item">
-                    <a href="#" class="nav-link active d-flex align-items-center gap-3" data-section="dashboard">
+                    <a href="#" class="nav-link active d-flex align-items-center gap-3"
+                        data-section="dashboard-section">
                         <i data-lucide="house"></i>
                         <span>Dashboard</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="tasks">
+                    <a href="#" class="nav-link d-flex align-items-center gap-3" id="task-section"
+                        data-section="tasks-section">
                         <i data-lucide="clipboard-check"></i>
                         <span>Task Manager</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="notes">
+                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="notes-section">
                         <i data-lucide="notebook-pen"></i>
                         <span>Notes</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="timer">
+                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="timer-section">
                         <i data-lucide="timer"></i>
                         <span>Focus Timer</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="roadmap">
+                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="roadmap-section">
                         <i data-lucide="map"></i>
                         <span>Roadmap</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="analytics">
+                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="analytics-section">
                         <i data-lucide="chart-no-axes-combined"></i>
                         <span>Analytics</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="settings">
+                    <a href="#" class="nav-link d-flex align-items-center gap-3" data-section="settings-section">
                         <i data-lucide="settings"></i>
                         <span>Settings</span>
                     </a>
@@ -94,7 +96,7 @@
                     <button class="btn menu-btn d-md-none">
                         <i data-lucide="menu"></i>
                     </button>
-                    <h3 class="page-title fw-bold m-0">Dashboard</h3>
+                    <h3 id="page-title" class="page-title fw-bold m-0">Dashboard</h3>
                 </div>
 
                 <!-- Right Side -->
@@ -143,7 +145,7 @@
             </header>
 
             <!-- ************* Dashboard Home Section ************* -->
-            <section id="dashboard-section" class="container-fluid py-4">
+            <section id="dashboard-section" class="container-fluid py-4 content-section">
 
                 <!-- Welcome Card -->
                 <div class="card border-0 shadow-sm rounded-4 welcome-card mb-4">
@@ -382,7 +384,7 @@
             </section>
 
             <!-- ================= Tasks ================= -->
-            <section id="tasks-section" class="content-section d-none">
+            <section id="tasks-section" class="content-section">
                 <div class="container-fluid py-4">
 
                     <!-- Heading -->
@@ -538,7 +540,7 @@
             </section>
 
             <!-- ================= Notes ================= -->
-            <section id="notes-section" class="content-section d-none">
+            <section id="notes-section" class="content-section">
                 <div class="container-fluid py-4">
 
                     <!-- Heading -->
@@ -652,7 +654,7 @@
             </section>
 
             <!-- ================= Timer ================= -->
-            <section id="timer-section" class="content-section d-none">
+            <section id="timer-section" class="content-section">
                 <div class="container-fluid py-4">
                     <p class="text-secondary mb-4">
                         Stay focused and boost your productivity.
@@ -730,7 +732,7 @@
             </section>
 
             <!-- ================= Roadmap ================= -->
-            <section id="roadmap-section" class="content-section d-none">
+            <section id="roadmap-section" class="content-section">
                 <div class="container-fluid py-4">
 
                     <!-- Top -->
@@ -867,7 +869,7 @@
             </section>
 
             <!-- ================= Analytics ================= -->
-            <section id="analytics-section" class="content-section d-none">
+            <section id="analytics-section" class="content-section">
                 <div class="container-fluid py-4">
                     <p class="text-secondary mb-4">
                         Monitor your productivity and overall progress.
@@ -991,7 +993,7 @@
             </section>
 
             <!-- ================= Settings ================= -->
-            <section id="settings-section" class="content-section d-none">
+            <section id="settings-section" class="content-section">
                 <div class="container-fluid py-4">
                     <p class="text-secondary mb-4">Customize your workspace preferences.</p>
 
