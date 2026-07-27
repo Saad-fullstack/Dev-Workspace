@@ -1,0 +1,8 @@
+/* ******************* Timer ********************* */
+#timer-display {
+    letter-spacing: 2px;
+}
+
+#timer-section .card {
+    min-height: 100%;
+}
