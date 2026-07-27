@@ -654,7 +654,7 @@
             </section>
 
             <!-- ================= Timer ================= -->
-            <section id="timer-section" class="content-section">
+            <section id="timer-section" class="content-section d-none">
                 <div class="container-fluid py-4">
                     <div class="mb-4">
                         <h2 class="fw-bold mb-1">Focus Timer</h2>
@@ -733,9 +733,143 @@
                     </div>
                 </div>
             </section>
+
             <!-- ================= Roadmap ================= -->
             <section id="roadmap-section" class="content-section">
+                <div class="container-fluid py-4">
 
+                    <!-- Top -->
+                    <div class="d-flex justify-content-between align-items-center flex-wrap gap-3 mb-4">
+                        <div>
+                            <h2 class="fw-bold mb-1">Learning Roadmap</h2>
+                            <p class="text-secondary mb-0">
+                                Track your learning journey and milestones.
+                            </p>
+                        </div>
+
+                        <button class="btn btn-primary rounded-3 px-4" data-bs-toggle="modal"
+                            data-bs-target="#roadmapModal">
+                            <i data-lucide="plus"></i>
+                            Add Roadmap
+                        </button>
+                    </div>
+
+                    <!-- Roadmap Card -->
+                    <div class="card border-0 shadow-sm rounded-4">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
+                                <div>
+                                    <h4 class="fw-bold mb-3">
+                                        Frontend Developer
+                                    </h4>
+                                    <div class="progress mb-4" style="height:10px;">
+                                        <div class="progress-bar" style="width:65%;">
+                                        </div>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <h6 class="fw-semibold">
+                                            Current Milestone
+                                        </h6>
+                                        <p class="text-secondary mb-0">
+                                            JavaScript DOM
+                                        </p>
+                                    </div>
+
+                                    <div>
+                                        <h6 class="fw-semibold">
+                                            Next Milestone
+                                        </h6>
+                                        <p class="text-secondary mb-0">
+                                            ES6 Modules
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex gap-2">
+                                    <button class="btn btn-outline-primary btn-sm">
+                                        <i data-lucide="pencil"></i>
+                                    </button>
+
+                                    <button class="btn btn-outline-danger btn-sm">
+                                        <i data-lucide="trash-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Empty State -->
+                    <div class="text-center py-5 d-none" id="empty-roadmap">
+                        <i data-lucide="map" style="width:70px;height:70px;"></i>
+                        <h4 class="mt-3">
+                            No Roadmap Yet
+                        </h4>
+                        <p class="text-secondary">
+                            Click "Add Roadmap" to create your learning roadmap.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="roadmapModal" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content rounded-4 border-0 shadow">
+                            <div class="modal-header">
+                                <h4 class="modal-title">
+                                    Add Roadmap
+                                </h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body">
+                                <form id="roadmap-form">
+                                    <div class="mb-3">
+                                        <label class="form-label">
+                                            Roadmap Title
+                                        </label>
+                                        <input type="text" class="form-control" id="roadmap-title"
+                                            placeholder="Frontend Developer" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">
+                                            Progress (%)
+                                        </label>
+                                        <input type="number" class="form-control" id="roadmap-progress" placeholder="65"
+                                            min="0" max="100" required>
+                                    </div>
+
+                                    <div class="mb-3">
+                                        <label class="form-label">
+                                            Current Milestone
+                                        </label>
+                                        <input type="text" class="form-control" id="current-milestone"
+                                            placeholder="JavaScript DOM" required>
+                                    </div>
+
+                                    <div class="mb-4">
+                                        <label class="form-label">
+                                            Next Milestone
+                                        </label>
+                                        <input type="text" class="form-control" id="next-milestone"
+                                            placeholder="ES6 Modules" required>
+                                    </div>
+
+                                    <div class="d-flex justify-content-end gap-2">
+                                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                                            Cancel
+                                        </button>
+
+                                        <button type="submit" class="btn btn-primary">
+                                            Save Roadmap
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <!-- ================= Analytics ================= -->
