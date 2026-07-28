@@ -6,3 +6,412 @@
 #timer-section .card {
     min-height: 100%;
 }
+
+/* ==================================================
+   MODERN DARK MODE
+================================================== */
+
+
+/* Main Background */
+body.dark-mode {
+
+    background: #0f172a;
+    color: #f8fafc;
+
+}
+
+
+/* Smooth transition */
+
+body,
+.card,
+.sidebar,
+.topbar,
+.form-control,
+.dropdown-menu,
+.note-item,
+.task-item,
+.btn,
+.progress {
+
+    transition: background .3s ease,
+        color .3s ease,
+        border .3s ease;
+
+}
+
+
+
+/* ================= Sidebar ================= */
+
+
+body.dark-mode .sidebar {
+
+    background: #111827;
+
+    border-color: #1f2937;
+
+}
+
+
+body.dark-mode .logo {
+
+    border-color: #1f2937;
+
+}
+
+
+body.dark-mode .logo h4 {
+
+    color: #f8fafc;
+
+}
+
+
+body.dark-mode .sidebar .nav-link {
+
+    color: #cbd5e1;
+
+}
+
+
+body.dark-mode .sidebar .nav-link:hover {
+
+    background: #1e293b;
+
+    color: #60a5fa;
+
+}
+
+
+body.dark-mode .sidebar .nav-link.active {
+
+    background: #2563eb;
+
+    color: white;
+
+}
+
+
+/* ================= Top Navbar ================= */
+
+
+body.dark-mode .topbar {
+
+    background: #111827;
+
+    border-color: #1f2937;
+
+}
+
+
+body.dark-mode .page-title {
+
+    color: #f8fafc;
+
+}
+
+
+/* Search */
+
+body.dark-mode .search-box .form-control {
+
+    background: #1e293b;
+
+    border-color: #334155;
+
+    color: white;
+
+}
+
+
+body.dark-mode .search-box .form-control::placeholder {
+
+    color: #94a3b8;
+
+}
+
+
+body.dark-mode .search-icon {
+
+    color: #94a3b8;
+
+}
+
+
+
+/* Theme button */
+
+body.dark-mode .theme-btn,
+body.dark-mode .menu-btn {
+
+    border-color: #334155;
+
+    color: white;
+
+}
+
+
+body.dark-mode .theme-btn:hover,
+body.dark-mode .menu-btn:hover {
+
+    background: #1e293b;
+
+}
+
+
+
+/* Profile button */
+
+body.dark-mode .profile-btn {
+
+    color: white;
+
+}
+
+
+
+/* Dropdown */
+
+body.dark-mode .dropdown-menu {
+
+    background: #1e293b;
+
+    border-color: #334155;
+
+}
+
+
+body.dark-mode .dropdown-item {
+
+    color: #f8fafc;
+
+}
+
+
+body.dark-mode .dropdown-item:hover {
+
+    background: #334155;
+
+}
+
+
+
+/* ================= Cards ================= */
+
+
+body.dark-mode .card {
+
+    background: #1e293b !important;
+
+    color: #f8fafc;
+
+    border-color: #334155 !important;
+
+}
+
+
+
+/* Card headings */
+
+body.dark-mode .card h1,
+body.dark-mode .card h2,
+body.dark-mode .card h3,
+body.dark-mode .card h4,
+body.dark-mode .card h5,
+body.dark-mode .card h6 {
+
+    color: #f8fafc;
+
+}
+
+
+
+/* ================= Text Colors ================= */
+
+
+/* Bootstrap overrides */
+
+body.dark-mode .text-secondary,
+body.dark-mode .text-muted {
+
+    color: #94a3b8 !important;
+
+}
+
+
+body.dark-mode p {
+
+    color: #cbd5e1;
+
+}
+
+
+
+body.dark-mode small {
+
+    color: #94a3b8;
+
+}
+
+
+
+/* ================= Dashboard ================= */
+
+
+body.dark-mode .icon-box {
+
+    background: #172554;
+
+    color: #60a5fa;
+
+}
+
+
+
+body.dark-mode .task-item {
+
+    border-color: #334155;
+
+}
+
+
+body.dark-mode .note-item {
+
+    background: #111827;
+
+}
+
+
+body.dark-mode .note-item p {
+
+    color: #94a3b8 !important;
+
+}
+
+
+
+/* ================= Forms ================= */
+
+
+body.dark-mode .form-control,
+body.dark-mode .form-select {
+
+    background: #111827;
+
+    border-color: #334155;
+
+    color: white;
+
+}
+
+
+body.dark-mode .form-control:focus,
+body.dark-mode .form-select:focus {
+
+    background: #111827;
+
+    color: white;
+
+    border-color: #2563eb;
+
+}
+
+
+
+body.dark-mode .form-label,
+body.dark-mode .form-check-label {
+
+    color: #e2e8f0;
+
+}
+
+
+
+/* ================= Modals ================= */
+
+
+body.dark-mode .modal-content {
+
+    background: #1e293b;
+
+    color: white;
+
+}
+
+
+body.dark-mode .modal-header,
+body.dark-mode .modal-footer {
+
+    border-color: #334155;
+
+}
+
+
+body.dark-mode .btn-close {
+
+    filter: invert(1);
+
+}
+
+
+
+/* ================= Progress ================= */
+
+
+body.dark-mode .progress {
+
+    background: #334155;
+
+}
+
+
+
+/* ================= Tables ================= */
+
+
+body.dark-mode table {
+
+    color: white;
+
+}
+
+
+
+/* ================= Alerts ================= */
+
+
+body.dark-mode .alert-primary {
+
+    background: #172554;
+
+    color: #bfdbfe;
+
+}
+
+
+
+/* ================= Scrollbar ================= */
+
+
+body.dark-mode::-webkit-scrollbar {
+
+    width: 10px;
+
+}
+
+
+body.dark-mode::-webkit-scrollbar-track {
+
+    background: #0f172a;
+
+}
+
+
+body.dark-mode::-webkit-scrollbar-thumb {
+
+    background: #475569;
+
+    border-radius: 10px;
+
+}
