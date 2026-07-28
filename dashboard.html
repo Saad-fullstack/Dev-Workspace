@@ -243,7 +243,7 @@
                                     <small class="text-secondary">
                                         Focus Time
                                     </small>
-                                    <h3 id="focus-time" class="fw-bold mb-0">
+                                    <h3 id="dashboard-focus-time" class="fw-bold mb-0">
                                         2h 30m
                                     </h3>
                                 </div>
@@ -624,7 +624,7 @@
                                         </button>
                                     </div>
                                 </form>
-                                
+
                             </div>
                         </div>
                     </div>
@@ -680,10 +680,10 @@
                                             Focus Time
                                         </label>
                                         <select class="form-select" id="focus-time">
-                                            <option>25 Minutes</option>
-                                            <option>30 Minutes</option>
-                                            <option>45 Minutes</option>
-                                            <option>60 Minutes</option>
+                                            <option value="25" selected>25 Minutes</option>
+                                            <option value="30">30 Minutes</option>
+                                            <option value="45">45 Minutes</option>
+                                            <option value="60">60 Minutes</option>
                                         </select>
                                     </div>
                                     <div class="mb-4">
@@ -691,9 +691,9 @@
                                             Break Time
                                         </label>
                                         <select class="form-select" id="break-time">
-                                            <option>5 Minutes</option>
-                                            <option>10 Minutes</option>
-                                            <option>15 Minutes</option>
+                                            <option value="5" selected>5 Minutes</option>
+                                            <option value="10">10 Minutes</option>
+                                            <option value="15">15 Minutes</option>
                                         </select>
                                     </div>
                                     <div class="alert alert-primary mb-0">
@@ -1053,6 +1053,8 @@
 <script src="assets/js/navigation.js"></script>
 <script src="assets/js/task.js"></script>
 <script src="assets/js/notes.js"></script>
+<script src="assets/js/timer.js"></script>
+<!-- <script src="assets/js/analytics.js"></script> -->
 </body>
 
 </html>
