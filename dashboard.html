@@ -723,54 +723,16 @@
 
                         <button class="btn btn-primary rounded-3 px-4" data-bs-toggle="modal"
                             data-bs-target="#roadmapModal">
-                            <i data-lucide="plus"></i>
-                            Add Roadmap
+                            <h5 class="modal-title" id="roadmap-modal-title">
+                                <i data-lucide="plus"></i>
+                                Add Roadmap
+                            </h5>
                         </button>
                     </div>
 
                     <!-- Roadmap Card -->
-                    <div class="card border-0 shadow-sm rounded-4">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between align-items-start flex-wrap gap-3">
-                                <div>
-                                    <h4 class="fw-bold mb-3">
-                                        Frontend Developer
-                                    </h4>
-                                    <div class="progress mb-4" style="height:10px;">
-                                        <div class="progress-bar" style="width:65%;">
-                                        </div>
-                                    </div>
-
-                                    <div class="mb-3">
-                                        <h6 class="fw-semibold">
-                                            Current Milestone
-                                        </h6>
-                                        <p class="text-secondary mb-0">
-                                            JavaScript DOM
-                                        </p>
-                                    </div>
-
-                                    <div>
-                                        <h6 class="fw-semibold">
-                                            Next Milestone
-                                        </h6>
-                                        <p class="text-secondary mb-0">
-                                            ES6 Modules
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="d-flex gap-2">
-                                    <button class="btn btn-outline-primary btn-sm">
-                                        <i data-lucide="pencil"></i>
-                                    </button>
-
-                                    <button class="btn btn-outline-danger btn-sm">
-                                        <i data-lucide="trash-2"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="card border-0 shadow-sm rounded-4" id="roadmap-card">
+                        
                     </div>
 
                     <!-- Empty State -->
@@ -802,7 +764,7 @@
                                         <label class="form-label">
                                             Roadmap Title
                                         </label>
-                                        <input type="text" class="form-control" id="roadmap-title"
+                                        <input type="text" class="form-control" id="roadmap-title" name="roadmapTitle"
                                             placeholder="Frontend Developer" required>
                                     </div>
 
@@ -811,7 +773,7 @@
                                             Progress (%)
                                         </label>
                                         <input type="number" class="form-control" id="roadmap-progress" placeholder="65"
-                                            min="0" max="100" required>
+                                            name="roadmapProgress" min="0" max="100" required>
                                     </div>
 
                                     <div class="mb-3">
@@ -819,14 +781,14 @@
                                             Current Milestone
                                         </label>
                                         <input type="text" class="form-control" id="current-milestone"
-                                            placeholder="JavaScript DOM" required>
+                                            name="currentMilestone" placeholder="JavaScript DOM" required>
                                     </div>
 
                                     <div class="mb-4">
                                         <label class="form-label">
                                             Next Milestone
                                         </label>
-                                        <input type="text" class="form-control" id="next-milestone"
+                                        <input type="text" class="form-control" id="next-milestone" name="nextMilestone"
                                             placeholder="ES6 Modules" required>
                                     </div>
 
@@ -1054,7 +1016,7 @@
 <script src="assets/js/task.js"></script>
 <script src="assets/js/notes.js"></script>
 <script src="assets/js/timer.js"></script>
-<!-- <script src="assets/js/analytics.js"></script> -->
+<script src="assets/js/roadmamp.js"></script>
 </body>
 
 </html>
