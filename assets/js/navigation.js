@@ -37,6 +37,9 @@ sidebarLinks.forEach((link) => {
         selectedSection.classList.remove("d-none")
         link.classList.add("active")
         pageTitle.textContent = link.textContent
+        if (sectionId === "dashboard-section" && typeof updateDashboard === "function") {
+            updateDashboard();
+        }
 
         localStorage.setItem("activeSection", sectionId);
 

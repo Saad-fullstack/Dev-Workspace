@@ -152,19 +152,19 @@
                     <div class="card-body p-4">
                         <div class="row align-items-center">
                             <div class="col-lg-8">
-                                <h2 class="fw-bold mb-2">
+                                <h2 class="fw-bold mb-2" id="welcome-message">
                                     Good Evening, Saad 👋
                                 </h2>
                                 <p class="welcome-text mb-3">
                                     Welcome back! Let's make today productive.
                                 </p>
-                                <span class="welcome-date">
+                                <span class="welcome-date" id="dashboard-date">
                                     Monday, July 27, 2026
                                 </span>
                             </div>
 
                             <div class="col-lg-4 text-lg-end mt-4 mt-lg-0">
-                                <button class="btn btn-primary px-4 py-2 rounded-3">
+                                <button class="btn btn-primary px-4 py-2 rounded-3" id="dashboard-add-task">
                                     <i data-lucide="plus"></i>
                                     Add Task
                                 </button>
@@ -264,25 +264,10 @@
                                     <a href="#" class="text-decoration-none">View All</a>
                                 </div>
 
-                                <div class="task-item d-flex align-items-center mb-3">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <span>Finish Dashboard UI</span>
+                                <div id="dashboard-task-list">
+
                                 </div>
 
-                                <div class="task-item d-flex align-items-center mb-3">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <span>Complete Local Storage</span>
-                                </div>
-
-                                <div class="task-item d-flex align-items-center mb-3">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <span>Push Latest Changes</span>
-                                </div>
-
-                                <div class="task-item d-flex align-items-center">
-                                    <input class="form-check-input me-3" type="checkbox">
-                                    <span>Prepare Presentation</span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -296,26 +281,10 @@
                                     <a href="#" class="text-decoration-none">View All</a>
                                 </div>
 
-                                <div class="note-item mb-3">
-                                    <h6>Frontend Ideas</h6>
-                                    <p class="mb-0 text-muted">
-                                        Dashboard improvements and UI updates.
-                                    </p>
+                                <div id="dashboard-note-list">
+
                                 </div>
 
-                                <div class="note-item mb-3">
-                                    <h6>Hackathon Plan</h6>
-                                    <p class="mb-0 text-muted">
-                                        Finish UI first then implement JavaScript.
-                                    </p>
-                                </div>
-
-                                <div class="note-item">
-                                    <h6>JavaScript</h6>
-                                    <p class="mb-0 text-muted">
-                                        Revise Local Storage before coding.
-                                    </p>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -337,20 +306,11 @@
                                     <div class="progress-bar bg-primary" id="roadmap-progress" style="width:65%;"></div>
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <small class="text-secondary">Current Milestone</small>
-                                        <p class="fw-semibold mb-3" id="current-milestone">
-                                            JavaScript DOM
-                                        </p>
-                                    </div>
-
-                                    <div class="col-md-6">
-                                        <small class="text-secondary">Next Milestone</small>
-                                        <p class="fw-semibold mb-3" id="next-milestone">
-                                            ES6 Modules
-                                        </p>
-                                    </div>
+                                <div class="text-end">
+                                    <button class="btn btn-outline-primary btn-sm" id="view-roadmap-btn">
+                                        <i data-lucide="map"></i>
+                                        View Roadmap
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -362,17 +322,17 @@
                             <div class="card-body">
                                 <h4 class="mb-4">Quick Actions</h4>
                                 <div class="d-grid gap-3">
-                                    <button class="btn btn-primary">
+                                    <button class="btn btn-primary" id="quick-add-task">
                                         <i data-lucide="plus"></i>
                                         Add Task
                                     </button>
 
-                                    <button class="btn btn-outline-primary">
+                                    <button class="btn btn-outline-primary" id="quick-add-note">
                                         <i data-lucide="notebook-pen"></i>
                                         Add Note
                                     </button>
 
-                                    <button class="btn btn-outline-success">
+                                    <button class="btn btn-outline-success" id="quick-start-focus">
                                         <i data-lucide="play"></i>
                                         Start Focus
                                     </button>
@@ -772,15 +732,15 @@
                                         <label class="form-label">
                                             Progress (%)
                                         </label>
-                                        <input type="number" class="form-control" id="roadmap-progress" placeholder="65"
-                                            name="roadmapProgress" min="0" max="100" required>
+                                        <input type="number" class="form-control" id="roadmap-progress-input"
+                                            placeholder="65" name="roadmapProgress" min="0" max="100" required>
                                     </div>
 
                                     <div class="mb-3">
                                         <label class="form-label">
                                             Current Milestone
                                         </label>
-                                        <input type="text" class="form-control" id="current-milestone"
+                                        <input type="text" class="form-control" id="current-milestone-input"
                                             name="currentMilestone" placeholder="JavaScript DOM" required>
                                     </div>
 
@@ -788,8 +748,8 @@
                                         <label class="form-label">
                                             Next Milestone
                                         </label>
-                                        <input type="text" class="form-control" id="next-milestone" name="nextMilestone"
-                                            placeholder="ES6 Modules" required>
+                                        <input type="text" class="form-control" id="next-milestone-input"
+                                            name="nextMilestone" placeholder="ES6 Modules" required>
                                     </div>
 
                                     <div class="d-flex justify-content-end gap-2">
@@ -1014,8 +974,9 @@
 <script src="assets/js/task.js"></script>
 <script src="assets/js/notes.js"></script>
 <script src="assets/js/timer.js"></script>
-<script src="assets/js/roadmamp.js"></script>
+<script src="assets/js/roadmap.js"></script>
 <script src="assets/js/analytics.js"></script>
+<script src="assets/js/dashboard.js"></script>
 <script src="assets/js/settings.js"></script>
 </body>
 

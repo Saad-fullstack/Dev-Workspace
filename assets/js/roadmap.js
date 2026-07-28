@@ -19,6 +19,9 @@ roadmapForm.addEventListener("submit", (e) => {
     roadmapForm.reset();
     roadmapModalTitle.textContent = "Add Roadmap";
     displayRoadmap();
+    if (typeof updateDashboardRoadmap === "function") {
+        updateDashboardRoadmap();
+    }
     bootstrap.Modal.getOrCreateInstance(roadmapModal).hide();
 });
 
@@ -82,6 +85,14 @@ const displayRoadmap = () => {
 
 displayRoadmap();
 
+const viewRoadmapBtn = document.getElementById("view-roadmap-btn");
+
+if (viewRoadmapBtn) {
+    viewRoadmapBtn.addEventListener("click", () => {
+        document.querySelector('[data-section="roadmap-section"]').click();
+    });
+}
+
 roadmapCard.addEventListener("click", (e) => {
     const deleteBtn = e.target.closest(".delete-roadmap");
 
@@ -91,6 +102,9 @@ roadmapCard.addEventListener("click", (e) => {
         roadmapCard.classList.add("d-none");
         emptyRoadmap.classList.remove("d-none");
         displayRoadmap();
+        if (typeof updateDashboardRoadmap === "function") {
+            updateDashboardRoadmap();
+        }
         return;
     }
 
