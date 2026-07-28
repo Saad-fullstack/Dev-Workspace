@@ -42,6 +42,21 @@ taskForm.addEventListener("submit", (e) => {
 
 const displayTask = () => {
     let task = JSON.parse(localStorage.getItem("newTask")) ?? []
+
+    if (task.length === 0) {
+        taskContainer.innerHTML = `
+        <div class="text-center py-5">
+            <i data-lucide="clipboard-list" class="mb-3"></i>
+            <h5>No Tasks Yet</h5>
+            <p class="text-secondary mb-0">
+                Click "Add Task" to create your first task.
+            </p>
+        </div>
+    `;
+        lucide.createIcons();
+        return;
+    }
+
     let taskHtml = ''
 
     task.forEach((task, index) => {
