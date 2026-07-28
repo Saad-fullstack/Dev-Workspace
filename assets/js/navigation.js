@@ -37,6 +37,23 @@ sidebarLinks.forEach((link) => {
         selectedSection.classList.remove("d-none")
         link.classList.add("active")
         pageTitle.textContent = link.textContent
+
+        localStorage.setItem("activeSection", sectionId);
+
+        if (sectionId === "analytics-section") {
+            window.displayAnalytics();
+        }
     })
 })
 
+// Restore last opened section after refresh
+const savedSection =
+    localStorage.getItem("activeSection") || "dashboard-section";
+
+const savedLink = document.querySelector(
+    `[data-section="${savedSection}"]`
+);
+
+if (savedLink) {
+    savedLink.click();
+}

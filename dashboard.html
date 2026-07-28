@@ -732,7 +732,7 @@
 
                     <!-- Roadmap Card -->
                     <div class="card border-0 shadow-sm rounded-4" id="roadmap-card">
-                        
+
                     </div>
 
                     <!-- Empty State -->
@@ -879,7 +879,7 @@
                                 </div>
 
                                 <div class="progress">
-                                    <div class="progress-bar bg-success" style="width:70%;">
+                                    <div class="progress-bar bg-success" id="task-progress-bar">
                                     </div>
                                 </div>
                             </div>
@@ -891,8 +891,7 @@
                                 </div>
 
                                 <div class="progress">
-                                    <div class="progress-bar" style="width:65%;">
-                                    </div>
+                                    <div class="progress-bar" id="roadmap-progress-bar"></div>
                                 </div>
                             </div>
 
@@ -902,8 +901,7 @@
                                     <span id="focus-progress">50%</span>
                                 </div>
                                 <div class="progress">
-                                    <div class="progress-bar bg-warning" style="width:50%;">
-                                    </div>
+                                    <div class="progress-bar bg-warning" id="focus-progress-bar"></div>
                                 </div>
                             </div>
                         </div>
@@ -915,16 +913,16 @@
                             <h5 class="fw-semibold mb-3">
                                 Summary
                             </h5>
-                            <p class="text-secondary mb-2">
+                            <p class="text-secondary mb-2" id="summary-task">
                                 ✔ You completed <strong>8</strong> tasks.
                             </p>
-                            <p class="text-secondary mb-2">
+                            <p class="text-secondary mb-2" id="summary-note">
                                 ✔ You created <strong>5</strong> notes.
                             </p>
-                            <p class="text-secondary mb-2">
+                            <p class="text-secondary mb-2" id="summary-focus">
                                 ✔ You studied for <strong>2h 30m</strong>.
                             </p>
-                            <p class="text-secondary mb-0">
+                            <p class="text-secondary mb-0" id="summary-message">
                                 🎯 Keep going! You're making consistent progress.
                             </p>
                         </div>
@@ -1017,6 +1015,7 @@
 <script src="assets/js/notes.js"></script>
 <script src="assets/js/timer.js"></script>
 <script src="assets/js/roadmamp.js"></script>
+<script src="assets/js/analytics.js"></script>
 </body>
 
 </html>
