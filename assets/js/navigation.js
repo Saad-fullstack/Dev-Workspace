@@ -26,7 +26,7 @@ sidebarLinks.forEach((link) => {
 
         // hide sections
         sections.forEach(section => {
-            section.style.display = "none"
+            section.classList.add("d-none")
         })
 
         // remove active class
@@ -34,7 +34,7 @@ sidebarLinks.forEach((link) => {
             sidebarLink.classList.remove("active")
         })
 
-        selectedSection.style.display = "block"
+        selectedSection.classList.remove("d-none")
         link.classList.add("active")
         pageTitle.textContent = link.textContent
     })
